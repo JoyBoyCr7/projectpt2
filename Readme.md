@@ -39,7 +39,7 @@ $.ajax("https://www.balldontlie.io/api/v1/players/?search=lebron")
 * You should see it cloning
 
 ## My
-Test your NBA Knowledge at 
+Test your NBA Knowledge at https://sportsflash.onrender.com
 
 ### Daily Schedule
 | day | TODO|
