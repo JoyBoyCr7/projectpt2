@@ -20,6 +20,7 @@ $.ajax("https://www.balldontlie.io/api/v1/players/?search=lebron")
     console.log(`The Goat, ${firstName} ${lastName} has been summoned`)
 })
  ```
+ What it does is, it returns every player to have ever played in the NBA
 ### Mockup
 
 ![](https://i.imgur.com/e6NS7L1.png)
