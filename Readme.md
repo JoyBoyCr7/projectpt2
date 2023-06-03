@@ -32,19 +32,16 @@ $.ajax("https://www.balldontlie.io/api/v1/players/?search=lebron")
 * Balldontlie API
 
 ## Installation
-* At the far right of the username of the github account on this page you'l find Fork. Click it.
-* To the far right of main you'l see Code. Click code and Clone using SSH is you can. Copy the link you see.
+* At the far right of the username of the github account on this page you'll find Fork. Click it.
+* To the far right of main you'll see Code. Click code and Clone using SSH is you can. Copy the link you see.
 * Open Terminal and CD into a folder you want to save this file in.
-* Type "Git clone" and past the link you copied from github in the terminal.
+* Type "Git clone" followed it up with pasting the link you copied from github in the terminal.
 * You should see it cloning
 
+## My
+Test your NBA Knowledge at 
 
-
-### Details about Difficulties
-There balldontlie API doesnt have up to date data on older retired player or players that are 
-not popular. So at times, older players wont have data on thier physical attributes.
 ### Daily Schedule
-
 | day | TODO|
 |-----|-----|
 | 1 | Set everything up along with the APi|
@@ -52,3 +49,9 @@ not popular. So at times, older players wont have data on thier physical attribu
 | 3 | Create responses and return them using the API|
 | 4 | Organize all components of the page with CSS|
 | 5 | Go through and add finishing touches making sure everything is working as it should|
+
+
+### Details about Difficulties
+There balldontlie API doesnt have up to date data on older retired player or players that are 
+not popular. So at times, older players wont have data on thier physical attributes.
+
