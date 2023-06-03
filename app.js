@@ -114,12 +114,13 @@ $.ajax(URL)
             console.log(response)
             console.log(response.data)
             // Testing
+            let weight = response.data[0].weight_pounds
             let height = response.data[0].height_feet
             let heightin = response.data[0].height_inches
             let firstName = response.data[0].first_name
             let lastName = response.data[0].last_name
             let team = response.data[0].team.full_name
-        
+    
         // testing
         console.log(`The Goat, ${firstName} ${lastName} has been summoned`)
         // testing
@@ -129,7 +130,7 @@ $.ajax(URL)
             $("#playerinfo").text(`${firstName} ${lastName} is a former NBA player of the ${team}.`)
         }
         else{
-        $("#playerinfo").text(`${firstName} ${lastName} is a NBA player for the ${team}. He stands at ${height} feet ${heightin} inches tall`)
+        $("#playerinfo").text(`${firstName} ${lastName} is a NBA player for the ${team}. He stands at ${height} feet ${heightin} inches tall and ${weight}lbs`)
         }
         })
         /////// getting NBA player info to read on screen
