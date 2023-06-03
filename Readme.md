@@ -39,7 +39,7 @@ $.ajax("https://www.balldontlie.io/api/v1/players/?search=lebron")
 * Type "Git clone" followed it up with pasting the link you copied from github in the terminal.
 * You should see it cloning
 
-## My Cite
+## My Site
 Test your NBA Knowledge at https://sportsflash.onrender.com
 
 ### Daily Schedule
