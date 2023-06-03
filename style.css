@@ -119,10 +119,11 @@ body{
 ****** */
 
 #playerinfo{
+    border: 5px black solid;
     text-align: center;
     font-size: 20px;
     width: 50%;
-    margin: auto;
+    margin: 3px auto;
     padding: 20px;
 }
 
@@ -132,7 +133,10 @@ body{
 form {
     text-align: center;
 }
-
+form ,input{
+    margin: auto;
+    width: 30%;
+}
 #searchteller{
     width: 70%;
     margin: auto;
@@ -140,3 +144,6 @@ form {
     padding-bottom: 10px;
 }
 
+input{
+    margin-top: 5px;
+}
