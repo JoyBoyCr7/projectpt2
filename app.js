@@ -130,7 +130,7 @@ $.ajax(URL)
             $("#playerinfo").text(`${firstName} ${lastName} is a former NBA player of the ${team}.`)
         }
         else{
-        $("#playerinfo").text(`${firstName} ${lastName} is a NBA player for the ${team}. He stands at ${height} feet ${heightin} inches tall and ${weight}lbs.`)
+            $("#playerinfo").text(`${firstName} ${lastName} is a NBA player for the ${team}. He stands at ${height} feet ${heightin} inches tall and ${weight}lbs.`)
         }
         })
         /////// getting NBA player info to read on screen
