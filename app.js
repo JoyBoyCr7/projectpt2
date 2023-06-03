@@ -5,9 +5,9 @@
 const state = {
     player1: 0,
     player2: 0,
-    currentQuestion: {},
     which: true
 }
+
 
 let questions = []
 //******************* */
@@ -33,6 +33,7 @@ const chooseAnswer = (event, question) => {
         if (state.which){
             state.player1++ 
             state.which = !state.which
+            
         }else{
             state.player2++
             state.which = !state.which
@@ -42,8 +43,15 @@ const chooseAnswer = (event, question) => {
     }
     else{
         setBoard(questions)
-        state.which = !state.which
-        
+        state.which = !state.which  
+    }
+    // testing who it is
+    console.log(state.which)
+    if (state.which){
+        $("#currentplayer").text("player1")
+    }
+    else{
+        $("#currentplayer").text("player2")
     }
 }
 
@@ -65,11 +73,13 @@ const setBoard = (q) => {
     $('li').on("click", (event) => {
         chooseAnswer(event, randomQuestion)
     })
+
 }
 
 //******************* */
 // Functions
 //******************* */
+
 
 //******************* */
 // Main App Logic
@@ -87,28 +97,34 @@ $.ajax(URL)
     console.log(questions)
     setBoard(questions)
 
-
-    
-
 })
+
+
 {
     let nbaPlayer = ''
     $("button").on('click', function(event){
         event.preventDefault();
         const choice =  $('#choice').val();
         nbaPlayer = choice
-        //Calling API
+
+        // fetching API
         $.ajax(`https://www.balldontlie.io/api/v1/players/?search=${nbaPlayer}`)
-    .then((response)=>{
-        console.log(response)
-        console.log(response.data)
-        let height = response.data[0].height_feet
-        let heightin = response.data[0].height_inches
-        let firstName = response.data[0].first_name
-        let lastName = response.data[0].last_name
-        let team = response.data[0].team.full_name
+        .then((response)=>{
+            // Testing
+            console.log(response)
+            console.log(response.data)
+            // Testing
+            let height = response.data[0].height_feet
+            let heightin = response.data[0].height_inches
+            let firstName = response.data[0].first_name
+            let lastName = response.data[0].last_name
+            let team = response.data[0].team.full_name
         
+        // testing
         console.log(`The Goat, ${firstName} ${lastName} has been summoned`)
+        // testing
+        
+        /////// getting NBA player info to read on screen 
         if (height === null){
             $("#playerinfo").text(`${firstName} ${lastName} is a former NBA player of the ${team}.`)
         }
@@ -116,10 +132,16 @@ $.ajax(URL)
         $("#playerinfo").text(`${firstName} ${lastName} is a NBA player for the ${team}. He stands at ${height} feet ${heightin} inches tall`)
         }
         })
+        /////// getting NBA player info to read on screen
 
+        
     })
 };
 
 //******************* */
 // Main App Logic
 //******************* */
+
+//********** */
+// current player
+//*********** */
