@@ -20,13 +20,14 @@ h1{
 ********************* */
 
 #question {
-    width: 70%;
+    width: 65%;
     padding: 30px;
     border: 3px solid blue;
     background-color: royalblue;
     color: white;
     font-size: 28px;
     margin: 10px auto;
+    text-align: center;
 }
 
 /* **********************
