@@ -1,10 +1,13 @@
+
 /* **********************
 *** Heading
 ********************* */
 
 h1{
     text-align: center;
-    color: royalblue;
+    background-color: black;
+    color: white;
+    margin: 0px;
 }
 
 /* **********************
@@ -71,3 +74,44 @@ h1{
     margin: 5px;
     text-align: center;
 }
+
+
+/* ******
+*** main background
+***** */
+body{
+    /* background-image: url(./antman.gif); */
+    background-color: antiquewhite;
+    background-size: cover;
+    background-position: center;
+}
+
+/* ******
+*** current player tracker
+ ****** */
+
+ #whoisplaying{
+    width: 50px;
+ }
+
+ 
+/* ******
+*** button
+****** */
+
+#button{
+    text-align: center;
+}
+
+/* ******
+*** player info
+****** */
+
+#playerinfo{
+    background-color: pink;
+
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+}
+

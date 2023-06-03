@@ -87,8 +87,38 @@ $.ajax(URL)
     console.log(questions)
     setBoard(questions)
 
-})
 
+    
+
+})
+{
+    let nbaPlayer = ''
+    $("button").on('click', function(event){
+        event.preventDefault();
+        const choice =  $('#choice').val();
+        nbaPlayer = choice
+        //Calling API
+        $.ajax(`https://www.balldontlie.io/api/v1/players/?search=${nbaPlayer}`)
+    .then((response)=>{
+        console.log(response)
+        console.log(response.data)
+        let height = response.data[0].height_feet
+        let heightin = response.data[0].height_inches
+        let firstName = response.data[0].first_name
+        let lastName = response.data[0].last_name
+        let team = response.data[0].team.full_name
+        
+        console.log(`The Goat, ${firstName} ${lastName} has been summoned`)
+        if (height === null){
+            $("#playerinfo").text(`${firstName} ${lastName} is a former NBA player of the ${team}.`)
+        }
+        else{
+        $("#playerinfo").text(`${firstName} ${lastName} is a NBA player for the ${team}. He stands at ${height} feet ${heightin} inches tall`)
+        }
+        })
+
+    })
+};
 
 //******************* */
 // Main App Logic
