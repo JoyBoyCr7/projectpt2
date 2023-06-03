@@ -51,7 +51,7 @@ Test your NBA Knowledge at https://sportsflash.onrender.com
 | 5 | Go through and add finishing touches making sure everything is working as it should|
 
 
-### Details about Difficulties
-There balldontlie API doesnt have up to date data on older retired player or players that are 
+### Difficulties
+The balldontlie API doesnt have up to date data on older retired player or players that are 
 not popular. So at times, older players wont have data on thier physical attributes.
 
